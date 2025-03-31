@@ -2,7 +2,7 @@ import torch.nn as nn
 import torch
 
 class CustomModel(nn.Module):
-    def __init__(self, vocab_size=27, emb_dim=300, num_epochs=15, lr=0.001):
+    def __init__(self, vocab_size=27, emb_dim=50, num_epochs=15, lr=0.001):
         super().__init__()
 
         self.vocab = "abcdefghijklmnopqrstuvwxyz"
