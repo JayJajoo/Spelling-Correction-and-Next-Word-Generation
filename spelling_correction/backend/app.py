@@ -14,6 +14,7 @@ def get_nearest_words():
     query_words = query_words.split(",")
     answers = {}
     for query_word in query_words:
+        query_word=query_word.lower()
         nearest_words = find_nearest_neighbors(query_word)
         distances = [levenshtein_distance(word, query_word) for word in nearest_words]
         sorted_indices = np.argsort(distances)

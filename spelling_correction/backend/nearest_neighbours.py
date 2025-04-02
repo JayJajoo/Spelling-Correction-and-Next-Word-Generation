@@ -6,7 +6,7 @@ import torch
 
 
 def find_nearest_neighbors(query_word, k=100):
-    path = "C:/Users/LEGION/Desktop/NLP Project/Spelling-Correction-and-Next-Word-Generation/spelling_correction/backend/saved_model_2"
+    path = "C:/Users/LEGION/Desktop/NLP Project/Spelling-Correction-and-Next-Word-Generation/spelling_correction/backend/saved_model_3"
     index = nmslib.init(method="hnsw", space="cosinesimil")
     index.loadIndex(f"{path}/word_index.bin", load_data=True)
     words = np.load(f"{path}/word_list.npy", allow_pickle=True)
