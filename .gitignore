@@ -1,21 +1,20 @@
-spelling_correction/Training Part/datasets
-spelling_correction/Training Part/datasets
+/training_part/spelling_correction/datasets
 
 
-spelling_correction/frontend/node_modules
-spelling_correction/frontend/.pnp
-spelling_correction/frontend.pnp.js
+/frontend/node_modules
+/frontend/.pnp
+/frontend.pnp.js
 
-spelling_correction/frontend/coverage
+/frontend/coverage
 
-spelling_correction/frontend/build
+/frontend/build
 
-spelling_correction/frontend/.DS_Store
-spelling_correction/frontend/.env.local
-spelling_correction/frontend/.env.development.local
-spelling_correction/frontend/.env.test.local
-spelling_correction/frontend/.env.production.local
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
 
-spelling_correction/frontend/npm-debug.log*
-spelling_correction/frontend/yarn-debug.log*
-spelling_correction/frontend/yarn-error.log*
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
