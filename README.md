@@ -139,9 +139,6 @@ The next word prediction uses an LSTM (Long Short-Term Memory) neural network mo
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-This project is open source and available under the [MIT License](LICENSE).
-
 ## Acknowledgements
 - Thanks to all contributors who have helped with the development of this project
 - Special thanks to the open-source community for providing the tools and libraries used in this project
