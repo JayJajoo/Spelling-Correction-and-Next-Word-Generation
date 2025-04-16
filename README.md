@@ -114,12 +114,14 @@ A full-stack web application that provides spelling correction and next word pre
 ## Technical Implementation
 
 ### Spelling Correction
-The spelling correction functionality uses a Siamese network architecture with character-level embeddings:
-1. Characters are embedded into a vector space, capturing the nuances of character patterns
-2. The Siamese network processes these embeddings to generate word-level representations
-3. The system finds nearest neighbors based on the embedding similarity
-4. Levenshtein distance is used as a supplementary metric for word similarity
-5. The most likely correct spelling is returned based on the combined similarity scores
+This module uses a Siamese LSTM network with character-level embeddings to detect and correct spelling errors:
+
+1. Words are encoded using one-hot vectors and passed through LSTM layers to generate embeddings.
+2. A Siamese setup computes the distance between embeddings of correct and incorrect words.
+3. Similarity scores are generated using a fully connected layer with sigmoid activation.
+4. Nearest neighbors are retrieved using NMSLIB based on the embedding space.
+5. Levenshtein distance is applied to refine and rank suggestions.
+6. The top spelling corrections are returned based on combined similarity.
 
 ### Next Word Generation
 The next word prediction uses an LSTM (Long Short-Term Memory) neural network model that:
